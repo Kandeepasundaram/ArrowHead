@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { MainContainerComponent } from './main-container/main-container.component';
+import { CoreUiModule } from '@arrow-head/core-ui';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MainContainerComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot([]),
+    CoreUiModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

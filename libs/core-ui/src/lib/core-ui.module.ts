@@ -1,7 +1,14 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NrwlcontainerComponent } from './nrwlcontainer/nrwlcontainer.component';
 
 @NgModule({
-  imports: [CommonModule]
+  imports: [BrowserModule,
+    RouterModule.forRoot([], { initialNavigation: 'enabled' }),CommonModule],
+  declarations: [DashboardComponent, NrwlcontainerComponent],
+  exports: [DashboardComponent, NrwlcontainerComponent]
 })
 export class CoreUiModule {}
