@@ -7,5 +7,12 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "range-e2e": {
+      "tags": []
+    },
+    "range": {
+      "tags": []
+    }
+  }
 }
