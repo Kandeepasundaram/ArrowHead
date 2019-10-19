@@ -13,6 +13,9 @@
     },
     "range": {
       "tags": []
+    },
+    "core-ui": {
+      "tags": []
     }
   }
 }

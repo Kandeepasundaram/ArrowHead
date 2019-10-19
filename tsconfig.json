@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@arrow-head/core-ui": ["libs/core-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
