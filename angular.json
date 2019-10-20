@@ -151,6 +151,68 @@
           "styleext": "scss"
         }
       }
+    },
+    "multilevelcomps": {
+      "projectType": "library",
+      "root": "libs/multilevelcomps",
+      "sourceRoot": "libs/multilevelcomps/src",
+      "prefix": "arrow-head",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/multilevelcomps/tsconfig.lib.json",
+              "libs/multilevelcomps/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/multilevelcomps/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/multilevelcomps/jest.config.js",
+            "tsConfig": "libs/multilevelcomps/tsconfig.spec.json",
+            "setupFile": "libs/multilevelcomps/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "shared-services": {
+      "projectType": "library",
+      "root": "libs/shared-services",
+      "sourceRoot": "libs/shared-services/src",
+      "prefix": "arrow-head",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared-services/tsconfig.lib.json",
+              "libs/shared-services/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared-services/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared-services/jest.config.js",
+            "tsConfig": "libs/shared-services/tsconfig.spec.json",
+            "setupFile": "libs/shared-services/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

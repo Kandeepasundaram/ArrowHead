@@ -16,7 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@arrow-head/core-ui": ["libs/core-ui/src/index.ts"]
+      "@arrow-head/core-ui": ["libs/core-ui/src/index.ts"],
+      "@arrow-head/multilevelcomps": ["libs/multilevelcomps/src/index.ts"],
+      "@arrow-head/shared-services": ["libs/shared-services/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

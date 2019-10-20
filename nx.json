@@ -16,6 +16,12 @@
     },
     "core-ui": {
       "tags": []
+    },
+    "multilevelcomps": {
+      "tags": []
+    },
+    "shared-services": {
+      "tags": []
     }
   }
 }
