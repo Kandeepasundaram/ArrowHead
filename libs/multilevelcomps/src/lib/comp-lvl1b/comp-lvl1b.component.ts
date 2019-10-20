@@ -9,6 +9,8 @@ export class CompLvl1bComponent implements OnInit {
 
   constructor() { }
 
+  children:[];
+
   ngOnInit() {
   }
 

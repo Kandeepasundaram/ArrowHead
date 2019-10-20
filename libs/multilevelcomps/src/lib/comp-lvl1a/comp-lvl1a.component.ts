@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'arrow-head-comp-lvl1a',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CompLvl1aComponent implements OnInit {
 
   constructor() { }
+
+  @Input()
+  adults: [];
 
   ngOnInit() {
   }

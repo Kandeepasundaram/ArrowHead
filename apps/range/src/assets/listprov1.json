@@ -1,0 +1,27 @@
+{
+  "members": [
+    {
+      "firstname": "KS",
+      "lastname":"Sera",
+      "status": "eligible"
+    },{
+      "firstname": "GS",
+      "lastname":"Sera",
+      "status": "eligible"
+    },
+    {
+      "firstname": "TKS",
+      "lastname":"Sera",
+      "status": "minor"
+    },{
+      "firstname": "KKS",
+      "lastname":"Sera",
+      "status": "minor"
+    }
+  ],
+  "metadata": {
+    "outcome": 0,
+    "status": 200,
+    "message": "Success"
+  }
+}
