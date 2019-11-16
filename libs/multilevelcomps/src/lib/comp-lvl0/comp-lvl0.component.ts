@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CompLvl0Component implements OnInit {
   constructor(private listProvService: ListProvService) {}
 
+
   currentUrl = window.location.href;
   hostname = window.location.hostname;
   isLocal = false;
@@ -17,7 +18,8 @@ export class CompLvl0Component implements OnInit {
 
   ngOnInit() {
     this.isLocal = this.hostname === 'localhost';
-    this.listProvService.getMembers().subscribe(
+    this.listProvService.getMembers()
+    .subscribe(
       (response: MemberInfo) => {
         error: {
           console.log(response);

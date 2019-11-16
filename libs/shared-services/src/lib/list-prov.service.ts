@@ -10,7 +10,8 @@ export class ListProvService {
 
   constructor(private httpClient: HttpClient) { }
 
-  baseUrl = "http://localhost:3000";
+  // baseUrl = "http://localhost:3000";
+  baseUrl = "https://seracorp.free.beeceptor.com/";
 
   getMembers(): Observable<MemberInfo>{
     return this.httpClient.get<MemberInfo>(this.baseUrl + '/members');

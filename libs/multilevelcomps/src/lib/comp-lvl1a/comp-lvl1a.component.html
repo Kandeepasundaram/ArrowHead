@@ -1,1 +1,8 @@
-<p>comp-lvl1a works!</p>
+<form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register">
+  <label for="register-email">Email</label>
+
+  <input name="email" id="register-email" type="email" placeholder="Email" ngModel required pattern="^\S+@\S+$" #name="ngModel" />
+  <span *ngIf="!email.valid">INVALID</span>
+
+  <input type="submit" value="Register">
+</form>

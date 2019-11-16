@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'arrow-head-comp-lvl1a',
@@ -6,13 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./comp-lvl1a.component.scss']
 })
 export class CompLvl1aComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   @Input()
   adults: [];
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  register(form: NgForm) {
+    console.log(form.controls['email'].value);
+  }
 }

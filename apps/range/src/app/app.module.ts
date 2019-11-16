@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -14,9 +15,10 @@ import { CoreUiModule } from '@arrow-head/core-ui';
     RouterModule.forRoot([]),
     HttpClientModule,
     CoreUiModule,
-
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
